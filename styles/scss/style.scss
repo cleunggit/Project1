@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap');
-@use "setup";
-@use "variables";
+@import "setup";
+@import "variables";
 @import "mixins";
-@use "globals";
+@import "globals";
+@import "header";
+@import "about";

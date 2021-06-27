@@ -1,0 +1,68 @@
+.header {
+  position: relative;
+  background-image: url(/assets/home-header.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  padding: 32px 24px 0 24px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+// Hamburger menu
+  &__hamburger {
+    position: relative;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+
+
+    &-bars {
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background-color: $white;
+
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: $white;
+      }
+
+      &::before {
+        top: -7px;
+      }
+
+      &::after {
+        bottom: -7px;
+      }
+    }
+  }
+
+  // Header text
+  &__text-wrapper {
+    width: 200px;
+  }
+  
+  &__text {
+    // @include headingFont(6.9rem);
+    font-size: 4.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    span {
+      display: inline-block;
+      background-color: $white;
+      color: $almostBlack;
+      padding: 2px;
+      height: 44px;
+    }
+  }
+}

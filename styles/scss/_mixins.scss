@@ -1,7 +1,8 @@
-@mixin headingFont($fontSize, $lineHeight,  $letterSpacing) {
+@mixin headingFont($fontSize) {
   font-size: $fontSize;
-  line-height: $lineHeight;
-  letter-spacing: $letterSpacing;
+  text-transform: uppercase;
+  // line-height: $lineHeight;
+  // letter-spacing: $letterSpacing;
 }
 
 /* Mixin to manage responsive breakpoints */
