@@ -19,18 +19,19 @@
 <body>
   <div class="wrapper">
     <!-- Header -->
-    <header>
-      <nav class="header__nav">
-        <button class="header__hamburger">
-          <span class="header__hamburger-container">
-            <span class="header__hamburger-bars"></span>
-          </span>
-        </button>
-      </nav>
-      <div class="header__text-container">
-        <h1 class="hero__text">The Restaurant Mall</h1>
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__nav">
+          <button class="header__hamburger">
+            <span class="header__hamburger-container">
+              <span class="header__hamburger-bars"></span>
+            </span>
+          </button>
+        </nav>
+        <div class="header__text-wrapper">
+          <h1 class="header__text">The <span>Restaurant</span> Mall</h1>
+        </div>
       </div>
-
     </header>
 
     <!-- Main -->
@@ -40,27 +41,29 @@
         <div class="about__wrapper">
           <!-- location -->
           <div class="about__location">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <h2>Location</h2>
+            <div class="about__icon-wrapper"><i class="fa fa-map-marker fa-3x circle-icon" aria-hidden="true"></i></div>
+            <h2 class="about__heading">Location</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi suscipit, natus commodi beatae, ex soluta dicta vitae eaque magnam repellendus id dolorem tempore molestias temporibus aliquam quam! Accusantium, id at.</p>
           </div>
           <!-- blog -->
           <div class="about__blog">
-            <i class="fa fa-file" aria-hidden="true"></i>
-            <h2>Blog</h2>
+            <div class="about__icon-wrapper"><i class="fa fa-file fa-3x circle-icon" aria-hidden="true"></i></div>
+            <h2 class="about__heading">Blog</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae ut quos deserunt optio totam laboriosam quisquam in! Autem deleniti debitis voluptatem ipsam soluta ducimus fugiat a laudantium recusandae nisi?</p>
           </div>
           <!-- comunity -->
           <div class="about__community">
-            <i class="fa fa-users" aria-hidden="true"></i>
-            <h2>Community</h2>
+            <div class="about__icon-wrapper"><i class="fa fa-users fa-3x circle-icon" aria-hidden="true"></i></div>
+
+            <h2 class="about__heading">Community</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dignissimos temporibus sed nihil itaque consequatur facere quos iure consectetur sit recusandae a in! Amet, eaque ad illum corrupti in optio.
             </p>
           </div>
           <!-- get in touch -->
           <div class="about__getInTouch">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <h2>Get in touch</h2>
+            <div class="about__icon-wrapper"><i class="fa fa-phone fa-flip-horizontal fa-3x circle-icon" aria-hidden="true"></i></div>
+  
+            <h2 class="about__heading">Get in touch</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut in maxime reiciendis beatae incidunt voluptatum odio ab id unde debitis nesciunt reprehenderit aliquam, nostrum sequi commodi minus officia aut facere!</p>
           </div>
         </div>
