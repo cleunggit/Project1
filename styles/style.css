@@ -244,8 +244,11 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Barlow", sans-serif;
   color: #ffffff;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 1px;
 }
 
 .header {
@@ -256,7 +259,7 @@ body {
   background-size: cover;
   height: 40vh;
   width: 100%;
-  padding: 32px 24px 0 24px;
+  padding: 24px 24px 0 24px;
 }
 .header__container {
   display: -webkit-box;
@@ -266,6 +269,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.header__nav {
+  margin-bottom: 15px;
 }
 .header__hamburger {
   position: relative;
@@ -294,19 +300,23 @@ body {
   bottom: -7px;
 }
 .header__text-wrapper {
-  width: 200px;
+  width: 240px;
+  height: 500px;
 }
 .header__text {
+  font-family: "Josefin Sans", sans-serif;
   font-size: 4.9rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 .header__text span {
   display: inline-block;
+  height: 45px;
   background-color: #ffffff;
   color: #161B0E;
-  padding: 2px;
-  height: 44px;
+  padding: 15px 2px;
+  margin-top: 8px;
+  margin-bottom: 15px;
 }
 
 .about {
@@ -330,6 +340,7 @@ body {
   text-align: center;
 }
 .about__heading {
+  font-family: "Josefin Sans", sans-serif;
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 9.98rem;
@@ -355,4 +366,7 @@ body {
   line-height: 50px;
   height: 50px;
   width: 50px;
+}
+.about .circle-icon:not(:first-child) {
+  margin-top: 20px;
 }
