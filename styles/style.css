@@ -413,7 +413,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .feature__group-text {
   text-align: center;
@@ -428,5 +428,24 @@ img {
 .feature__read-more {
   color: #161B0E;
   background: #FFD300;
+  text-transform: uppercase;
+}
+
+.promo {
+  background: #2B331B;
+  padding: 24px;
+}
+.promo__heading {
+  margin: 0;
+  font-size: 3.5rem;
+  line-height: 99.8px;
+  color: #FFD300;
+}
+.promo__text {
+  text-align: center;
+}
+.promo__find-out-more {
+  background: #161B0E;
+  color: #ffffff;
   text-transform: uppercase;
 }

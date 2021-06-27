@@ -1,0 +1,25 @@
+.promo {
+  background: $pine;
+  padding: 24px;
+
+  &__wrapper {
+    
+  }
+
+  &__heading {
+    margin: 0;
+    font-size: 3.5rem;
+    line-height: 99.8px;
+    color: $sunflowerYellow;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__find-out-more {
+    background: $almostBlack;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
