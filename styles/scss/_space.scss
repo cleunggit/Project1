@@ -1,0 +1,25 @@
+.space {
+  background: $pine;
+
+  &__feature {
+    padding: 32px 24px 0 24px;
+
+    &-heading {
+      margin: 0;
+      font-size: 4.5rem;
+      line-height: 99.8px;
+      color: $sunflowerYellow;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &-text {
+      text-align: center;
+    }
+  }
+
+  &__find-out-more {
+    background: $almostBlack;
+    color: $white;
+    text-transform: uppercase;
+  }
+}

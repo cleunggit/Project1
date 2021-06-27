@@ -1,0 +1,11 @@
+.gallery {
+  padding: 24px;
+  background: $almostBlack;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

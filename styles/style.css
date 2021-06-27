@@ -440,6 +440,8 @@ img {
   font-size: 3.5rem;
   line-height: 99.8px;
   color: #FFD300;
+  text-transform: uppercase;
+  text-align: center;
 }
 .promo__text {
   text-align: center;
@@ -448,4 +450,53 @@ img {
   background: #161B0E;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.space {
+  background: #2B331B;
+}
+.space__feature {
+  padding: 32px 24px 0 24px;
+}
+.space__feature-heading {
+  margin: 0;
+  font-size: 4.5rem;
+  line-height: 99.8px;
+  color: #FFD300;
+  text-transform: uppercase;
+  text-align: center;
+}
+.space__feature-text {
+  text-align: center;
+}
+.space__find-out-more {
+  background: #161B0E;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.gallery {
+  padding: 24px;
+  background: #161B0E;
+}
+.gallery__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  background: #0f0f0f;
+  text-align: center;
+  padding: 24px;
 }
