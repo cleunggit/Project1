@@ -1,0 +1,12 @@
+@mixin headingFont($fontSize, $lineHeight,  $letterSpacing) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+/* Mixin to manage responsive breakpoints */
+@mixin breakpoint($breakpoint) {
+  @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+  }
+}

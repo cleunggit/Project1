@@ -1,0 +1,19 @@
+// Colors
+$sunflowerYellow: #FFD300;
+$pine: #2B331B;
+$almostBlack: #161B0E;
+$black: #0f0f0f;
+$white: #ffffff;
+
+$shadow: 0 5px 15px $sunflowerYellow;
+
+// Font
+$font-primary: 'Josefin Sans', sans-serif;
+$font-secondary: 'Barlow', sans-serif;
+
+// Media query breakpoints
+$breakpoints: (
+    'sm': 481px,
+    'md': 769px,
+    'lg': 1025px
+)
