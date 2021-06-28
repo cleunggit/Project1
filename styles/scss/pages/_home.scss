@@ -1,8 +1,7 @@
-@use '../utilities/variables' as *;
+@use '../utilities/' as *;
 
 .home {
   background-image: url(/assets/home-header.jpg);
   background-repeat: no-repeat;
-  background-position: 0px;
   background-size: cover;
 }

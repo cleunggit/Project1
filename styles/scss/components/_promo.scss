@@ -1,4 +1,4 @@
-@use '../utilities/variables' as *;
+@use '../utilities/' as *;
 
 .promo {
   background: $pine;
@@ -10,10 +10,8 @@
 
   &__heading {
     margin: 0;
-    font-size: 3.5rem;
-    line-height: 99.8px;
+    @include headerFont(3rem, 99.8px, 1px);
     color: $sunflowerYellow;
-    text-transform: uppercase;
     text-align: center;
   }
 

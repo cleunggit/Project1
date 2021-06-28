@@ -1,4 +1,4 @@
-@use '../utilities/variables' as *;
+@use '../utilities/' as *;
 
 .space {
   background: $pine;
@@ -8,10 +8,8 @@
 
     &-heading {
       margin: 0;
-      font-size: 4.5rem;
-      line-height: 99.8px;
+      @include headerFont(2.6rem, 99.8px, 1px);
       color: $sunflowerYellow;
-      text-transform: uppercase;
       text-align: center;
     }
     &-text {

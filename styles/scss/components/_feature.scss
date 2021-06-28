@@ -1,4 +1,4 @@
-@use '../utilities/variables' as *;
+@use '../utilities/' as *;
 
 .feature {
   background: $almostBlack;
@@ -21,11 +21,7 @@
   }
 
   &__heading {
-    // margin: 0;
-    font-size: 4rem;
-    letter-spacing: 1.3px;
-    line-height: 58px;
-    text-transform: uppercase;
+    @include headerFont(4rem, 5.8rem, 1.3px);
   }
 
   &__read-more {

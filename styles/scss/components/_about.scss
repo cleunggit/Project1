@@ -1,4 +1,4 @@
-@use '../utilities/variables' as *;
+@use '../utilities/' as *;
 
 .about {
   background: $pine;
@@ -13,10 +13,7 @@
   }
   
   &__heading {
-    font-size: 4.5rem;
-    font-weight: 400;
-    line-height: 9.98rem;
-    text-transform: uppercase;
+    @include headerFont(4.5rem, 9.98rem, 1px);
     margin: 0;
   }
 
