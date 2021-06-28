@@ -236,6 +236,10 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
@@ -244,18 +248,14 @@ body {
   letter-spacing: 1px;
 }
 
-html {
-  font-size: 62.5%;
+p {
+  margin: 0;
+  font-family: "Barlow", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-}
-
-p {
-  margin: 0;
-  font-family: "Barlow", sans-serif;
 }
 
 a, a:visited, a:hover {
@@ -264,16 +264,6 @@ a, a:visited, a:hover {
 
 img {
   width: 100%;
-}
-
-.button {
-  display: inline-block;
-  font-size: 2.24rem;
-  line-height: 41.6px;
-  letter-spacing: 0.8px;
-  text-align: center;
-  margin: 20px 0;
-  padding: 2px 5px;
 }
 
 .header {
@@ -498,6 +488,64 @@ img {
           align-items: center;
 }
 
+.form__wrapper {
+  padding: 24px;
+}
+.form input {
+  width: 100%;
+  font-size: 2rem;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #FFD300;
+  outline: none;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.form input::-webkit-input-placeholder {
+  color: white;
+}
+.form input::-moz-placeholder {
+  color: white;
+}
+.form input:-ms-input-placeholder {
+  color: white;
+}
+.form input::-ms-input-placeholder {
+  color: white;
+}
+.form input::placeholder {
+  color: white;
+}
+.form textarea {
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  background: transparent;
+  border: 1px solid #FFD300;
+  margin: 20px 0;
+}
+.form button {
+  width: 100%;
+  color: #161B0E;
+  background: #FFD300;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.button {
+  display: inline-block;
+  font-size: 2.24rem;
+  line-height: 41.6px;
+  letter-spacing: 0.8px;
+  text-align: center;
+  margin: 20px 0;
+  padding: 2px 5px;
+}
+
 .home {
   background-image: url(/assets/home-header.jpg);
   background-repeat: no-repeat;
@@ -510,4 +558,8 @@ img {
   background-repeat: no-repeat;
   background-position: 0px;
   background-size: cover;
+}
+
+.form {
+  background: #161B0E;
 }

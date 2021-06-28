@@ -33,11 +33,11 @@
       <form class="form" action="">
         <div class="form__wrapper">
           <label class="sr-only" for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="name">
+          <input type="text" name="name" id="name" onfocus="this.placeholder=''" onblur="this.placeholder = 'Name'" placeholder="Name">
           <label class="sr-only" for="email">Email</label>
-          <input type="email" name="email" id="" placeholder="Email address">
+          <input type="email" name="email" id="" onfocus="this.placeholder=''" onblur="this.placeholder = 'Email address'"placeholder="Email address">
           <label class="sr-only" for="message">Message</label>
-          <textarea name="message" id="" cols="30" rows="10"></textarea>
+          <textarea name="message" id="" cols="30" rows="10" onfocus="this.placeholder=''" onblur="this.placeholder = 'Message'" placeholder="Message"></textarea>
           <button class="btn">Submit</button>
         </div>
       </form>

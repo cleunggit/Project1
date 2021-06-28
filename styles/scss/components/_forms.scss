@@ -1,1 +1,47 @@
 @use '../utilities/variables' as *;
+
+.form {
+
+
+  &__wrapper {
+    padding: 24px;
+  }
+
+  input {
+    width: 100%;
+    font-size: 2rem;
+    color: $white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $sunflowerYellow;
+    outline: none;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+
+
+  textarea {
+    color: $white;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    border: 1px solid $sunflowerYellow;
+    margin: 20px 0;
+  }
+
+
+  button {
+    width: 100%;
+    color: $almostBlack;
+    background: $sunflowerYellow;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+}

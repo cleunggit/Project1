@@ -1,18 +1,10 @@
 @use '../utilities/variables' as *;
 
-html {
-  font-size: 62.5%;
-}
 
 body {
   margin: 0;
   padding: 0;
 
-}
-
-p {
-  margin: 0;
-  font-family: $font-secondary;
 }
 
 a, a:visited, a:hover {
@@ -23,12 +15,4 @@ img {
   width: 100%;
 }
 
-.button {
-  display: inline-block;
-  font-size: 2.24rem;
-  line-height: 41.6px;
-  letter-spacing: 0.8px;
-  text-align: center;
-  margin: 20px 0;
-  padding: 2px 5px;
-}
+

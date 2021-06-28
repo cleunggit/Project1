@@ -2,10 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap');
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: $font-primary;
   color: $white;
   font-size: 2rem;
   line-height: 2.8rem;
   letter-spacing: 1px;
+}
+
+p {
+  margin: 0;
+  font-family: $font-secondary;
 }
