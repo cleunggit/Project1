@@ -10,3 +10,26 @@
 .form {
   background: $almostBlack;
 }
+
+.social {
+  background: $pine;
+  padding-top: 20px;
+
+  &__wrapper {
+    text-align: center;
+    padding: 30px;
+  }
+
+  &__links i {
+    color: $sunflowerYellow;
+    margin-bottom: 10px;
+  }
+
+  &__links i:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__text {
+    margin: 20px 0;
+  }
+}
