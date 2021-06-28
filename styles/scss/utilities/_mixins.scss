@@ -1,3 +1,5 @@
+@use '../utilities/variables' as *;
+
 @mixin headerFont($fontSize, $lineHeight, $letterSpacing) {
   font-size: $fontSize;
   line-height: $lineHeight;

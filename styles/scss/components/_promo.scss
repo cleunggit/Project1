@@ -9,7 +9,6 @@
   }
 
   &__heading {
-    margin: 0;
     @include headerFont(3rem, 99.8px, 1px);
     color: $sunflowerYellow;
     text-align: center;

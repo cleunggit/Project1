@@ -236,11 +236,13 @@ html {
   overflow: hidden;
 }
 
+/* Mixin to manage responsive breakpoints */
 html {
   font-size: 62.5%;
 }
 
 body {
+  font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
   font-size: 2rem;
   line-height: 2.8rem;
@@ -248,7 +250,6 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Josefin Sans", sans-serif;
   margin: 0;
 }
 
@@ -257,7 +258,6 @@ p {
   font-family: "Barlow", sans-serif;
 }
 
-/* Mixin to manage responsive breakpoints */
 body {
   margin: 0;
   padding: 0;
@@ -295,6 +295,11 @@ img {
   background: transparent;
   cursor: pointer;
 }
+@media (min-width: 769px) {
+  .header__hamburger {
+    display: none;
+  }
+}
 .header__hamburger-bars {
   position: absolute;
   width: 24px;
@@ -314,6 +319,9 @@ img {
 }
 .header__hamburger-bars::after {
   bottom: -7px;
+}
+.header__text-wrapper {
+  width: 240px;
 }
 .header__text {
   font-size: 4.9rem;
@@ -421,6 +429,7 @@ img {
   line-height: 5.8rem;
   letter-spacing: 1.3px;
   text-transform: uppercase;
+  padding-top: 40px;
 }
 .feature__read-more {
   color: #161B0E;
@@ -433,7 +442,6 @@ img {
   padding: 24px;
 }
 .promo__heading {
-  margin: 0;
   font-size: 3rem;
   line-height: 99.8px;
   letter-spacing: 1px;
@@ -457,7 +465,6 @@ img {
   padding: 32px 24px 0 24px;
 }
 .space__feature-heading {
-  margin: 0;
   font-size: 2.6rem;
   line-height: 99.8px;
   letter-spacing: 1px;

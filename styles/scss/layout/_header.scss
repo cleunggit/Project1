@@ -21,6 +21,10 @@
     background: transparent;
     cursor: pointer;
 
+    @include breakpoint('md') {
+      display: none;
+    }
+
 
     &-bars {
       position: absolute;
@@ -49,7 +53,7 @@
 
   // Header text
   &__text-wrapper {
-    // width: 240px;
+    width: 240px;
   }
   
   &__text {
