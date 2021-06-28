@@ -236,7 +236,14 @@ html {
   overflow: hidden;
 }
 
-/* Mixin to manage responsive breakpoints */
+body {
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 1px;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -244,11 +251,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Josefin Sans", sans-serif;
-  color: #ffffff;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  letter-spacing: 1px;
 }
 
 p {
@@ -276,11 +278,7 @@ img {
 
 .header {
   position: relative;
-  background-image: url(/assets/home-header.jpg);
-  background-repeat: no-repeat;
-  background-position: 0px;
-  background-size: cover;
-  height: 40vh;
+  height: 300px;
   width: 100%;
   padding: 24px 24px 0 24px;
 }
@@ -324,7 +322,6 @@ img {
 }
 .header__text-wrapper {
   width: 240px;
-  height: 500px;
 }
 .header__text {
   font-size: 4.9rem;
@@ -339,6 +336,12 @@ img {
   padding: 15px 2px;
   margin-top: 8px;
   margin-bottom: 15px;
+}
+
+.footer {
+  background: #0f0f0f;
+  text-align: center;
+  padding: 24px;
 }
 
 .about {
@@ -495,8 +498,16 @@ img {
           align-items: center;
 }
 
-.footer {
-  background: #0f0f0f;
-  text-align: center;
-  padding: 24px;
+.home {
+  background-image: url(/assets/home-header.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px;
+  background-size: cover;
+}
+
+.contact {
+  background-image: url(/assets/contact-header.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px;
+  background-size: cover;
 }

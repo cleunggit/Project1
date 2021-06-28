@@ -1,12 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap');
-@import "setup";
-@import "variables";
-@import "mixins";
-@import "globals";
-@import "header";
-@import "about";
-@import "feature";
-@import "promo";
-@import "space";
-@import "gallery";
-@import "footer";
+
+@use "./base/setup";
+@use "./base/typography";
+
+// @use "./utilities/variables";
+// @use "./utilities/mixins";
+
+@use "./layout/globals";
+@use "./layout/header";
+@use "./layout/footer";
+
+@use "./components/about";
+@use "./components/feature";
+@use "./components/promo";
+@use "./components/space";
+@use "./components/gallery";
+
+@use "./pages/home";
+@use "./pages/contact";

@@ -1,17 +1,14 @@
+@use '../utilities/variables' as *;
+
 .header {
   position: relative;
-  background-image: url(/assets/home-header.jpg);
-  background-repeat: no-repeat;
-  background-position: 0px;
-  background-size: cover;
-  height: 40vh;
+  height: 300px;
   width: 100%;
   padding: 24px 24px 0 24px;
 
   &__container {
     display: flex;
     flex-direction: column;
-    
   }
 
   &__nav {
@@ -53,7 +50,6 @@
   // Header text
   &__text-wrapper {
     width: 240px;
-    height: 500px;
   }
   
   &__text {

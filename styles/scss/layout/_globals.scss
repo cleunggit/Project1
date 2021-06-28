@@ -1,3 +1,5 @@
+@use '../utilities/variables' as *;
+
 html {
   font-size: 62.5%;
 }
@@ -5,11 +7,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: $font-primary;
-  color: $white;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  letter-spacing: 1px;
+
 }
 
 p {
