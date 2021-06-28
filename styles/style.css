@@ -315,20 +315,19 @@ img {
 .header__hamburger-bars::after {
   bottom: -7px;
 }
-.header__text-wrapper {
-  width: 240px;
-}
 .header__text {
   font-size: 4.9rem;
   font-weight: 600;
+  line-height: normal;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 .header__text span {
   display: inline-block;
   height: 45px;
   background-color: #ffffff;
   color: #161B0E;
-  padding: 15px 2px;
+  padding: 6px 2px;
   margin-top: 8px;
   margin-bottom: 15px;
 }
@@ -610,6 +609,7 @@ img {
   text-transform: uppercase;
   color: #FFD300;
   margin-bottom: 20px;
+  text-align: center;
 }
 .blog-post__date {
   font-weight: bold;
@@ -631,6 +631,7 @@ img {
   letter-spacing: 1.3px;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
 }
 .comments__entry {
   display: -webkit-box;
@@ -656,4 +657,23 @@ img {
 
 .aside {
   background: #2B331B;
+  text-align: center;
+}
+.aside__wrapper {
+  padding: 20px 0 50px 0;
+}
+.aside__heading {
+  font-size: 2.5rem;
+  line-height: 58px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #FFD300;
+  margin-top: 20px;
+}
+.aside__related-posts-list {
+  list-style-position: outside;
+  text-align: left;
+}
+.aside__related-posts-list-item {
+  padding-left: 20px;
 }

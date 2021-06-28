@@ -18,6 +18,7 @@
     @include headerFont(4.3rem, 60px, 1px);
     color: $sunflowerYellow;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   &__date {
@@ -40,6 +41,7 @@
   &__heading {
     @include headerFont(4rem, 58px, 1.3px);
     margin: 0;
+    text-align: center;
   }
 
   &__entry {
@@ -69,8 +71,24 @@
 
 .aside {
   background: $pine;
-
+  text-align: center;
+  
   &__wrapper {
-    
+    padding: 20px 0 50px 0;
+  }
+  
+  &__heading {
+    @include headerFont(2.5rem, 58px, 0.8px);
+    color: $sunflowerYellow;
+    margin-top: 20px;
+  }
+
+  &__related-posts-list {
+    list-style-position: outside;
+    text-align: left;
+
+    &-item {
+      padding-left: 20px;
+    }
   }
 }
