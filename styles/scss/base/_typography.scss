@@ -7,11 +7,15 @@ html {
 }
 
 body {
-  font-family: $font-primary;
   color: $white;
   font-size: 2rem;
   line-height: 2.8rem;
   letter-spacing: 1px;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-primary;
+  margin: 0;
 }
 
 p {

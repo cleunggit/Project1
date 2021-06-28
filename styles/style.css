@@ -241,11 +241,15 @@ html {
 }
 
 body {
-  font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
   font-size: 2rem;
   line-height: 2.8rem;
   letter-spacing: 1px;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
 }
 
 p {
@@ -559,7 +563,7 @@ img {
 .contact {
   background-image: url(/assets/contact-header.jpg);
   background-repeat: no-repeat;
-  background-position: 0px;
+  background-position: -10px;
   background-size: cover;
 }
 
@@ -584,4 +588,72 @@ img {
 }
 .social__text {
   margin: 20px 0;
+}
+
+.blog {
+  background-image: url(/assets/blog-header.jpg);
+  background-repeat: no-repeat;
+  background-position: -100px;
+  background-size: cover;
+}
+
+.blog-post {
+  background: #2B331B;
+}
+.blog-post__wrapper {
+  padding: 24px;
+}
+.blog-post__heading {
+  font-size: 4.3rem;
+  line-height: 60px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFD300;
+  margin-bottom: 20px;
+}
+.blog-post__date {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.blog-post p {
+  margin-bottom: 20px;
+}
+
+.comments {
+  background: #2B331B;
+}
+.comments__wrapper {
+  padding: 50px 24px;
+}
+.comments__heading {
+  font-size: 4rem;
+  line-height: 58px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.comments__entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+.comments__entry img {
+  width: 50px;
+  height: 50px;
+}
+.comments__entry-date {
+  font-weight: bold;
+  color: #FFD300;
+}
+.comments__entry-text {
+  margin-left: 20px;
+}
+
+.form {
+  background: #2B331B;
+}
+
+.aside {
+  background: #2B331B;
 }
