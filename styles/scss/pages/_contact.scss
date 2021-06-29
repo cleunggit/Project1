@@ -5,13 +5,13 @@
     padding-top: 30px;
     
     @include breakpoint('md') {
-      width: 100%;
+      // width: 100%;
     }
   }
 }
 
 main {
-  // background: $pine;
+  background: $pine;
 }
 
 
@@ -25,7 +25,7 @@ main {
   
   &__wrapper {
     @include breakpoint('lg') {
-      // max-width: 1100px;
+      max-width: 1100px;
       margin: 0 auto;
       display: flex;
       flex-direction: row;
@@ -41,18 +41,26 @@ main {
     background: $almostBlack;
     @include breakpoint('lg') {
       position: absolute;
-      right: 80px;
+      right: -140px;
       top: -130px;
     }
   }
 
   &__social {
-    background: $pine;
+    // background: $pine;
     padding-top: 20px;
 
     &-wrapper {
       text-align: center;
       padding: 30px;
+
+      @include breakpoint('lg') {
+        text-align: left;
+        position: absolute;
+        left: 0;
+        top: 100px;
+      }
+      
     }
 
     &-links i {

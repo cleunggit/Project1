@@ -3,7 +3,7 @@
 .header {
   position: relative;
   height: 300px;
-  width: 100%;
+  // width: 100%;
   padding: 24px 24px 0 24px;
 
   @include breakpoint('md') {
@@ -115,6 +115,10 @@
     line-height: normal;
     text-transform: uppercase;
     margin-top: 20px;
+
+    @include breakpoint('md') {
+      font-size: 6.9rem;
+    }
 
     span {
       display: inline-block;

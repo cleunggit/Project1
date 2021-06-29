@@ -5,8 +5,9 @@
 
   &__wrapper {
     padding: 24px;
+
     @include breakpoint('lg') {
-      width: 900px;
+      width: 840px;
       margin: 0 auto;
       padding: 60px 60px 30px 60px;
     }
