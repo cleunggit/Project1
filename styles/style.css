@@ -912,11 +912,31 @@ main {
   margin: 20px 0;
 }
 
+@media (min-width: 1025px) {
+  .main__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .blog {
   background-image: url(/assets/blog-header.jpg);
   background-repeat: no-repeat;
   background-position: -100px;
   background-size: cover;
+}
+@media (min-width: 1025px) {
+  .blog {
+    background-position: center;
+  }
 }
 
 .blog-post {
@@ -924,6 +944,16 @@ main {
 }
 .blog-post__wrapper {
   padding: 24px;
+}
+@media (min-width: 1025px) {
+  .blog-post__wrapper {
+    -webkit-box-shadow: -5px 5px 0 #FFD300;
+            box-shadow: -5px 5px 0 #FFD300;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding-right: 0;
+  }
 }
 .blog-post__heading {
   font-size: 4.3rem;
@@ -934,6 +964,25 @@ main {
   color: #FFD300;
   margin-bottom: 20px;
   text-align: center;
+}
+@media (min-width: 1025px) {
+  .blog-post__heading {
+    text-align: left;
+  }
+}
+@media (min-width: 1025px) {
+  .blog-post-image {
+    position: relative;
+    top: -20px;
+    right: 0;
+    -webkit-box-shadow: -5px 5px 0 #FFD300;
+            box-shadow: -5px 5px 0 #FFD300;
+  }
+}
+@media (min-width: 1025px) {
+  .blog-post__text {
+    padding: 30px 80px;
+  }
 }
 .blog-post__date {
   font-weight: bold;
@@ -949,6 +998,11 @@ main {
 .comments__wrapper {
   padding: 50px 24px;
 }
+@media (min-width: 1025px) {
+  .comments__wrapper {
+    padding: 30px 130px;
+  }
+}
 .comments__heading {
   font-size: 4rem;
   font-weight: 400;
@@ -958,11 +1012,21 @@ main {
   margin: 0;
   text-align: center;
 }
+@media (min-width: 1025px) {
+  .comments__heading {
+    text-align: left;
+  }
+}
 .comments__entry {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
+}
+@media (min-width: 1025px) {
+  .comments__entry {
+    margin-top: 20px;
+  }
 }
 .comments__entry img {
   width: 50px;
@@ -977,11 +1041,25 @@ main {
 }
 
 .aside {
-  background: #2B331B;
+  background: #161B0E;
   text-align: center;
+}
+@media (min-width: 1025px) {
+  .aside {
+    height: 100%;
+    text-align: left;
+    position: relative;
+    left: 0;
+    margin: 60px;
+  }
 }
 .aside__wrapper {
   padding: 20px 0 50px 0;
+}
+@media (min-width: 1025px) {
+  .aside__wrapper {
+    padding: 10px 20px;
+  }
 }
 .aside__heading {
   font-size: 2.5rem;

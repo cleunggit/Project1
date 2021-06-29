@@ -22,91 +22,102 @@
               <span class="header__hamburger-bars"></span>
             </span>
           </button>
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
+            <li class="header__nav-item"><a href="#about" class="header__nav-link">About</a></li>
+            <li class="header__nav-item"><a href="blog.html" class="header__nav-link">Blog</a></li>
+            <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+          </ul>
         </nav>
         <div class="header__text-wrapper">
           <h1 class="header__text">Blog</h1>
         </div>
       </div>
-    </header>
+    </header
+    >
     <!-- Main -->
     <main>
-      <!-- Blog post section -->
-      <section class="blog-post">
-        <div class="blog-post__wrapper">
-          <h2 class="blog-post__heading">Employement Opportunities</h2>
-          <img src="./assets/blog-post-image.jpg" alt="waitress setting the table">
-          <p class="blog-post__date">Monday October 32, 2019 by Sulaire</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quo laborum commodi quos necessitatibus porro iusto explicabo laboriosam, sed id ipsa impedit libero totam, suscipit, similique hic inventore facilis veniam?</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore possimus itaque id rerum, nesciunt reprehenderit maiores facere veniam ea quidem! Exercitationem debitis officia, odio possimus temporibus quasi porro consequatur laborum architecto accusamus repudiandae! Voluptates earum expedita dolore, architecto ipsum fugiat iure dolorem explicabo, beatae nisi similique dolor velit hic quam.</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, laboriosam perferendis culpa amet alias repellendus distinctio nulla vero ratione sint illum iste eius voluptate! Odit aperiam porro sit unde, recusandae non at ex voluptate voluptates provident quos expedita ea ab delectus necessitatibus exercitationem, nesciunt nostrum ipsam adipisci facilis dicta deserunt.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, soluta. Quo, dolores quaerat? Quas, magnam a quasi animi facilis eaque.</p>
-        </div>
-      </section>
-
-      <!-- Comments section -->
-      <section class="comments">
-        <div class="comments__wrapper">
-          <h3 class="comments__heading">Comments:</h3>
-          <!-- Entry 1 -->
-          <div class="comments__entry">
-            <img class="photo" src="./assets/comment-1.jpg" alt="headshot of girl">
-            <div class="comments__entry-text">
-              <p class="comments__entry-date">Tuesday Octover 9th, 2019 by Ali</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus id explicabo quibusdam repudiandae vitae molestiae excepturi, ad ut, veniam earum architecto eaque pariatur, nisi nobis doloribus nulla inventore expedita quas reiciendis distinctio? Ipsum ducimus dignissimos rerum corporis hic! Eligendi, doloremque.</p>
-            </div>
-          </div>
-          <!-- Entry 2 -->
-          <div class="comments__entry">
-            <img src="./assets/comment-2.jpg" alt="headshot of girl">
-            <div class="comments__entry-text">
-              <p class="comments__entry-date">Tuesday Octover 10th, 2019 by Lisa</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quasi ducimus blanditiis tempora doloremque, nisi sit perferendis excepturi harum facilis.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Form -->
-      <section>
-        <form class="form" action="">
-          <div class="form__wrapper">
-            <label class="sr-only" for="name">Name</label>
-            <input type="text" name="name" id="name" onfocus="this.placeholder=''" onblur="this.placeholder = 'Name'" placeholder="Name">
-            <label class="sr-only" for="email">Email</label>
-            <input type="email" name="email" id="" onfocus="this.placeholder=''" onblur="this.placeholder = 'Email address'"placeholder="Email address">
-            <label class="sr-only" for="comment">Comment</label>
-            <textarea name="message" id="" cols="30" rows="10" onfocus="this.placeholder=''" onblur="this.placeholder = 'Comment'" placeholder="Comment"></textarea>
-            <button class="btn">Post comment</button>
-          </div>
-        </form>
-        </form>
-      </section>
-
-      <!-- Featured section -->
-      <aside class="aside">
-        <div class="aside__wrapper">
-          <div class="aside__featured-restaurants">
-            <img src="./assets/blog-side-image.jpg" alt="dish with salmon">
-            <h4 class="aside__heading">Featured Restaurants</h4>
-            <div class="aside__featured-restaurants-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ducimus! Amet beatae officia, delectus commodi qui illo eos eaque maxime, dignissimos nam nulla aut, mollitia dolorem ipsa numquam provident repellendus.</p>
-            </div>
-          </div>
-
-          <div class="aside__related-posts">
+    <div class="main__wrapper">
+  
+        <!-- Blog post section -->
+        <section class="blog-post">
+          <div class="blog-post__wrapper">
+            <img class="blog-post-image" src="./assets/blog-post-image.jpg" alt="waitress setting the table">
             
-            <h4 class="aside__heading">Related Posts</h4>
-            <ul class="aside__related-posts-list">
-              <li class="aside__related-posts-list-item">Lorem ipsum dolor sit</li>
-              <li class="aside__related-posts-list-item">Lorem, ipsum dolor</li>
-              <li class="aside__related-posts-list-item">Lorem ipsum dolor sit</li>
-              <li class="aside__related-posts-list-item">Lorem ipsum dolor sit amet</li>
-            </ul>
+            <div class="blog-post__text">
+              <h2 class="blog-post__heading">Employement Opportunities</h2>
+              <p class="blog-post__date">Monday October 32, 2019 by Sulaire</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quo laborum commodi quos necessitatibus porro iusto explicabo laboriosam, sed id ipsa impedit libero totam, suscipit, similique hic inventore facilis veniam?</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore possimus itaque id rerum, nesciunt reprehenderit maiores facere veniam ea quidem! Exercitationem debitis officia, odio possimus temporibus quasi porro consequatur laborum architecto accusamus repudiandae! Voluptates earum expedita dolore, architecto ipsum fugiat iure dolorem explicabo, beatae nisi similique dolor velit hic quam.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, laboriosam perferendis culpa amet alias repellendus distinctio nulla vero ratione sint illum iste eius voluptate! Odit aperiam porro sit unde, recusandae non at ex voluptate voluptates provident quos expedita ea ab delectus necessitatibus exercitationem, nesciunt nostrum ipsam adipisci facilis dicta deserunt.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, soluta. Quo, dolores quaerat? Quas, magnam a quasi animi facilis eaque.</p>
+            </div>
           </div>
-
-        </div>
-      </aside>
-    </main>
+  
+          <!-- Comments section -->
+          <section class="comments">
+            <div class="comments__wrapper">
+              <h3 class="comments__heading">Comments:</h3>
+              <!-- Entry 1 -->
+              <div class="comments__entry">
+                <img class="photo" src="./assets/comment-1.jpg" alt="headshot of girl">
+                <div class="comments__entry-text">
+                  <p class="comments__entry-date">Tuesday Octover 9th, 2019 by Ali</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus id explicabo quibusdam repudiandae vitae molestiae excepturi, ad ut, veniam earum architecto eaque pariatur, nisi nobis doloribus nulla inventore expedita quas reiciendis distinctio? Ipsum ducimus dignissimos rerum corporis hic! Eligendi, doloremque.</p>
+                </div>
+              </div>
+              <!-- Entry 2 -->
+              <div class="comments__entry">
+                <img src="./assets/comment-2.jpg" alt="headshot of girl">
+                <div class="comments__entry-text">
+                  <p class="comments__entry-date">Tuesday Octover 10th, 2019 by Lisa</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quasi ducimus blanditiis tempora doloremque, nisi sit perferendis excepturi harum facilis.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+          <!-- Form -->
+          <section>
+            <form class="form" action="">
+              <div class="form__wrapper">
+                <label class="sr-only" for="name">Name</label>
+                <input type="text" name="name" id="name" onfocus="this.placeholder=''" onblur="this.placeholder = 'Name'" placeholder="Name">
+                <label class="sr-only" for="email">Email</label>
+                <input type="email" name="email" id="" onfocus="this.placeholder=''" onblur="this.placeholder = 'Email address'"placeholder="Email address">
+                <label class="sr-only" for="comment">Comment</label>
+                <textarea name="message" id="" cols="30" rows="10" onfocus="this.placeholder=''" onblur="this.placeholder = 'Comment'" placeholder="Comment"></textarea>
+                <button class="btn">Post comment</button>
+              </div>
+            </form>
+            </form>
+          </section>
+        </section>
+        <!-- Featured section -->
+        <aside class="aside">
+          <div class="aside__wrapper">
+            <div class="aside__featured-restaurants">
+              <img src="./assets/blog-side-image.jpg" alt="dish with salmon">
+              <h4 class="aside__heading">Featured Restaurants</h4>
+              <div class="aside__featured-restaurants-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ducimus! Amet beatae officia, delectus commodi qui illo eos eaque maxime, dignissimos nam nulla aut, mollitia dolorem ipsa numquam provident repellendus.</p>
+              </div>
+            </div>
+  
+            <div class="aside__related-posts">
+  
+              <h4 class="aside__heading">Related Posts</h4>
+              <ul class="aside__related-posts-list">
+                <li class="aside__related-posts-list-item">Lorem ipsum dolor sit</li>
+                <li class="aside__related-posts-list-item">Lorem, ipsum dolor</li>
+                <li class="aside__related-posts-list-item">Lorem ipsum dolor sit</li>
+                <li class="aside__related-posts-list-item">Lorem ipsum dolor sit amet</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
   </div>
 
 

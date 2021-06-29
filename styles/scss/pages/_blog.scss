@@ -1,10 +1,32 @@
 @use '../utilities/' as *;
 
+// .wrapper {
+//   @include breakpoint('lg') {
+//     display: flex;
+//   }
+// }
+
+.main {
+  &__wrapper {
+    @include breakpoint('lg') {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      // margin-left: 30%;
+    }
+  }
+}
+
 .blog {
   background-image: url(/assets/blog-header.jpg);
   background-repeat: no-repeat;
   background-position: -100px;
   background-size: cover;
+  
+
+  @include breakpoint('lg') {
+    background-position: center;
+  }
 }
 
 .blog-post {
@@ -12,6 +34,16 @@
 
   &__wrapper {
     padding: 24px;
+
+    @include breakpoint('lg') {
+      // background: $sunflowerYellow;
+      box-shadow: -5px 5px 0 $sunflowerYellow;
+      position: relative;
+      top: 0;
+      right: 0;
+      padding-right: 0;
+      // margin-left: 30%;
+    }
   }
 
   &__heading {
@@ -19,6 +51,26 @@
     color: $sunflowerYellow;
     margin-bottom: 20px;
     text-align: center;
+
+    @include breakpoint('lg') {
+      text-align: left;
+    }
+  }
+
+  &-image {
+
+    @include breakpoint('lg') {
+      position: relative;
+      top: -20px;
+      right: 0;
+      box-shadow: -5px 5px 0 $sunflowerYellow;
+    }
+  }
+
+  &__text {
+    @include breakpoint('lg') {
+      padding: 30px 80px;
+    }
   }
 
   &__date {
@@ -36,17 +88,30 @@
 
   &__wrapper {
     padding: 50px 24px;
+
+    @include breakpoint('lg') {
+      padding: 30px 130px;
+      // margin-left: 30%;
+    }
   }
 
   &__heading {
     @include headerFont(4rem, 58px, 1.3px);
     margin: 0;
     text-align: center;
+
+    @include breakpoint('lg') {
+      text-align: left;
+    }
   }
 
   &__entry {
     display: flex;
     margin-top: 50px;
+
+    @include breakpoint('lg') {
+      margin-top: 20px;
+    }
 
     img {
       width: 50px;
@@ -70,11 +135,23 @@
 }
 
 .aside {
-  background: $pine;
+  background: $almostBlack;
   text-align: center;
+  
+  @include breakpoint('lg') {
+    height: 100%;
+    text-align: left;
+    position: relative;
+    left: 0;
+    margin: 60px;
+  }
   
   &__wrapper {
     padding: 20px 0 50px 0;
+
+    @include breakpoint('lg') {
+      padding: 10px 20px;
+    }
   }
   
   &__heading {
