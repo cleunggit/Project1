@@ -12,9 +12,18 @@
     }
   }
 
+  &__input-fields {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint('md') {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
   input {
-    // width: 100%;
-    width: 300px;
+    width: 100%;
     font-size: 2rem;
     color: $white;
     background: transparent;
@@ -24,22 +33,14 @@
     padding: 20px;
     margin-bottom: 20px;
 
+    @include breakpoint('lg') {
+      width: 378px;
+    }
+
     &::placeholder {
       color: white;
     }
-
-    &__input-fields {
-      @include breakpoint('md') {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-
-      }
-    }
   }
-
 
   textarea {
     color: $white;
