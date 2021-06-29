@@ -500,10 +500,17 @@ img {
 
 .feature {
   background: #161B0E;
+  position: relative;
 }
 .feature__wrapper {
   width: 100%;
   margin: 0 auto;
+}
+@media (min-width: 769px) {
+  .feature__wrapper {
+    height: 650px;
+    margin: 0 auto;
+  }
 }
 .feature__group {
   display: -webkit-box;
@@ -517,10 +524,71 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 30px;
+  max-width: 1110px;
+}
+@media (min-width: 769px) {
+  .feature__group-1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+@media (min-width: 769px) {
+  .feature__group-2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+@media (min-width: 769px) {
+  .feature__group-image-1 {
+    position: absolute;
+    width: 500px;
+    left: 0;
+    top: -30px;
+    -webkit-box-shadow: 10px 10px 0 #FFD300;
+            box-shadow: 10px 10px 0 #FFD300;
+  }
+}
+@media (min-width: 769px) {
+  .feature__group-image-2 {
+    position: absolute;
+    width: 500px;
+    right: 0;
+    bottom: -30px;
+    -webkit-box-shadow: -10px 10px 0 #FFD300;
+            box-shadow: -10px 10px 0 #FFD300;
+  }
 }
 .feature__group-text {
   text-align: center;
   padding: 0 24px;
+}
+@media (min-width: 769px) {
+  .feature__group-text-1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: left;
+    width: 500px;
+  }
+}
+@media (min-width: 769px) {
+  .feature__group-text-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: right;
+    width: 500px;
+  }
 }
 .feature__heading {
   font-size: 4rem;
@@ -538,6 +606,13 @@ img {
 .promo {
   background: #2B331B;
   padding: 24px;
+}
+@media (min-width: 769px) {
+  .promo__wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
 }
 .promo__heading {
   font-size: 3rem;

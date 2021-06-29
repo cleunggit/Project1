@@ -2,10 +2,17 @@
 
 .feature {
   background: $almostBlack;
+  position: relative;
   
   &__wrapper {
     width: 100%;
     margin: 0 auto;
+    
+    @include breakpoint('md') {
+      // position: relative;
+      height: 650px;
+      margin: 0 auto;
+    }
   }
   
   &__group {
@@ -13,10 +20,65 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
+    max-width: 1110px;
+    
+    &-1 {
+      @include breakpoint('md') {
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+    }
+
+    &-2 {
+      @include breakpoint('md') {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+      }
+    }
+
+    &-image-1 {
+      @include breakpoint('md') {
+        position: absolute;
+        width: 500px;
+        left: 0;
+        top: -30px;
+        box-shadow: 10px 10px 0 $sunflowerYellow;
+      }
+    }
+
+    &-image-2 {
+      @include breakpoint('md') {
+        position: absolute;
+        width: 500px;
+        right: 0;
+        bottom: -30px;
+        box-shadow: -10px 10px 0 $sunflowerYellow;
+      }
+    }
     
     &-text {
       text-align: center;
       padding: 0 24px;
+
+      &-1 {
+        @include breakpoint('md') {
+          position: absolute;
+          right: 0;
+          top: 0;
+          text-align: left;
+          width: 500px;
+        }
+      }
+
+      &-2 {
+        @include breakpoint('md') {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          text-align: right;
+          width: 500px;
+        }
+      }
     }
   }
 
