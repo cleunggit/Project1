@@ -14,7 +14,7 @@
 <body>
   <div class="wrapper">
     <!-- Header -->
-    <header class="header contact">
+    <header class="header contact__header">
       <div class="header__container">
         <nav class="header__nav">
           <button class="header__hamburger">
@@ -23,7 +23,7 @@
             </span>
           </button>
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
+            <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
             <li class="header__nav-item"><a href="#about" class="header__nav-link">About</a></li>
             <li class="header__nav-item"><a href="blog.html" class="header__nav-link">Blog</a></li>
             <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
@@ -36,34 +36,38 @@
     </header>
 
     <main>
-      <form class="form" action="">
-        <div class="form__wrapper">
-          <label class="sr-only" for="name">Name</label>
-          <input type="text" name="name" id="name" onfocus="this.placeholder=''" onblur="this.placeholder = 'Name'" placeholder="Name">
-          <label class="sr-only" for="email">Email</label>
-          <input type="email" name="email" id="" onfocus="this.placeholder=''" onblur="this.placeholder = 'Email address'"placeholder="Email address">
-          <label class="sr-only" for="message">Message</label>
-          <textarea name="message" id="" cols="30" rows="10" onfocus="this.placeholder=''" onblur="this.placeholder = 'Message'" placeholder="Message"></textarea>
-          <button class="btn">Submit</button>
-        </div>
-      </form>
-      <section class="social">
-        <div class="social__wrapper">
-          <div class="social__links">
-            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
-            <p>info@email.com</p>
+      <div class="contact__wrapper">
+        <form class="contact__form form" action="">
+          <div class="contact__form-wrapper form__wrapper">
+            <div class="form__input-fields">
+              <label class="sr-only" for="name">Name</label>
+              <input type="text" name="name" id="name" onfocus="this.placeholder=''" onblur="this.placeholder = 'Name'" placeholder="Name">
+              <label class="sr-only" for="email">Email</label>
+              <input type="email" name="email" id="" onfocus="this.placeholder=''" onblur="this.placeholder = 'Email address'"placeholder="Email address">
+              <label class="sr-only" for="message">Message</label>
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" onfocus="this.placeholder=''" onblur="this.placeholder = 'Message'" placeholder="Message"></textarea>
+            <button class="btn">Submit</button>
           </div>
-            <div class="social__text">
-            <p>123 - 456 - 7890</p>
-            <p>123 Queen Street West, Unit 10</p>
-            <p>Toronto, Ontario</p>
-            <p>M5V2D5</p>
+        </form>
+        <section class="contact__social">
+          <div class="contact__social-wrapper">
+            <div class="contact__social-links">
+              <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+              <p>info@email.com</p>
+            </div>
+              <div class="contact__social-text">
+              <p>123 - 456 - 7890</p>
+              <p>123 Queen Street West, Unit 10</p>
+              <p>Toronto, Ontario</p>
+              <p>M5V2D5</p>
+            </div>
           </div>
-        </div>
-      </section>    
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">

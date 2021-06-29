@@ -732,11 +732,22 @@ img {
   }
 }
 
+.form {
+  -webkit-box-shadow: 20px 20px 0 #FFD300;
+          box-shadow: 20px 20px 0 #FFD300;
+}
 .form__wrapper {
   padding: 24px;
 }
+@media (min-width: 1025px) {
+  .form__wrapper {
+    width: 900px;
+    margin: 0 auto;
+    padding: 60px 60px 30px 60px;
+  }
+}
 .form input {
-  width: 100%;
+  width: 300px;
   font-size: 2rem;
   color: #ffffff;
   background: transparent;
@@ -760,6 +771,22 @@ img {
 }
 .form input::placeholder {
   color: white;
+}
+@media (min-width: 769px) {
+  .form input__input-fields {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .form textarea {
   color: #ffffff;
@@ -803,33 +830,65 @@ img {
   }
 }
 
-.contact {
+.header__text-wrapper {
+  padding-top: 30px;
+}
+@media (min-width: 769px) {
+  .header__text-wrapper {
+    width: 100%;
+  }
+}
+
+.contact__header {
   background-image: url(/assets/contact-header.jpg);
   background-repeat: no-repeat;
   background-position: -10px;
   background-size: cover;
 }
-
-.form {
+@media (min-width: 1025px) {
+  .contact__wrapper {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    height: 600px;
+    background: #2B331B;
+  }
+}
+.contact__form {
   background: #161B0E;
 }
-
-.social {
+@media (min-width: 1025px) {
+  .contact__form {
+    position: absolute;
+    right: 80px;
+    top: -130px;
+  }
+}
+.contact__social {
   background: #2B331B;
   padding-top: 20px;
 }
-.social__wrapper {
+.contact__social-wrapper {
   text-align: center;
   padding: 30px;
 }
-.social__links i {
+.contact__social-links i {
   color: #FFD300;
   margin-bottom: 10px;
 }
-.social__links i:not(:last-child) {
+.contact__social-links i:not(:last-child) {
   margin-right: 20px;
 }
-.social__text {
+.contact__social-text {
   margin: 20px 0;
 }
 
@@ -895,10 +954,6 @@ img {
 }
 .comments__entry-text {
   margin-left: 20px;
-}
-
-.form {
-  background: #2B331B;
 }
 
 .aside {

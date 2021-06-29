@@ -1,35 +1,73 @@
 @use '../utilities/' as *;
 
+.header {
+  &__text-wrapper {
+    padding-top: 30px;
+    
+    @include breakpoint('md') {
+      width: 100%;
+    }
+  }
+}
+
+main {
+  // background: $pine;
+}
+
+
 .contact {
-  background-image: url(/assets/contact-header.jpg);
-  background-repeat: no-repeat;
-  background-position: -10px;
-  background-size: cover;
-}
-
-.form {
-  background: $almostBlack;
-}
-
-.social {
-  background: $pine;
-  padding-top: 20px;
-
+  &__header {
+    background-image: url(/assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-position: -10px;
+    background-size: cover;
+  }
+  
   &__wrapper {
-    text-align: center;
-    padding: 30px;
+    @include breakpoint('lg') {
+      // max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      height: 600px;
+      background: $pine;
+    }
+  }
+  
+
+  &__form {
+    background: $almostBlack;
+    @include breakpoint('lg') {
+      position: absolute;
+      right: 80px;
+      top: -130px;
+    }
   }
 
-  &__links i {
-    color: $sunflowerYellow;
-    margin-bottom: 10px;
+  &__social {
+    background: $pine;
+    padding-top: 20px;
+
+    &-wrapper {
+      text-align: center;
+      padding: 30px;
+    }
+
+    &-links i {
+      color: $sunflowerYellow;
+      margin-bottom: 10px;
+      
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    &-text {
+      margin: 20px 0;
+    }
   }
 
-  &__links i:not(:last-child) {
-    margin-right: 20px;
-  }
-
-  &__text {
-    margin: 20px 0;
-  }
 }
+

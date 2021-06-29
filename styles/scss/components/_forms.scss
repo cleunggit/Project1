@@ -1,12 +1,20 @@
-@use '../utilities/variables' as *;
+@use '../utilities/' as *;
 
 .form {
+  box-shadow: 20px 20px 0 $sunflowerYellow;
+
   &__wrapper {
     padding: 24px;
+    @include breakpoint('lg') {
+      width: 900px;
+      margin: 0 auto;
+      padding: 60px 60px 30px 60px;
+    }
   }
 
   input {
-    width: 100%;
+    // width: 100%;
+    width: 300px;
     font-size: 2rem;
     color: $white;
     background: transparent;
@@ -18,6 +26,17 @@
 
     &::placeholder {
       color: white;
+    }
+
+    &__input-fields {
+      @include breakpoint('md') {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+      }
     }
   }
 
