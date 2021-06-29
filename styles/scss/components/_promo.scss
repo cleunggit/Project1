@@ -16,6 +16,10 @@
     @include headerFont(3rem, 99.8px, 1px);
     color: $sunflowerYellow;
     text-align: center;
+
+    @include breakpoint('md') {
+      font-size: 4.5rem;
+    }
   }
 
   &__text {

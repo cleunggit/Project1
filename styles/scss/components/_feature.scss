@@ -5,13 +5,15 @@
   position: relative;
   
   &__wrapper {
-    width: 100%;
+    // width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
     
-    @include breakpoint('md') {
-      // position: relative;
+    
+    @include breakpoint('lg') {
       height: 650px;
       margin: 0 auto;
+      padding: 50px 0;
     }
   }
   
@@ -20,24 +22,23 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
-    max-width: 1110px;
     
     &-1 {
-      @include breakpoint('md') {
+      @include breakpoint('lg') {
         flex-direction: row;
         justify-content: flex-end;
       }
     }
 
     &-2 {
-      @include breakpoint('md') {
+      @include breakpoint('lg') {
         flex-direction: row-reverse;
         justify-content: flex-end;
       }
     }
 
     &-image-1 {
-      @include breakpoint('md') {
+      @include breakpoint('lg') {
         position: absolute;
         width: 500px;
         left: 0;
@@ -47,7 +48,7 @@
     }
 
     &-image-2 {
-      @include breakpoint('md') {
+      @include breakpoint('lg') {
         position: absolute;
         width: 500px;
         right: 0;
@@ -58,23 +59,17 @@
     
     &-text {
       text-align: center;
-      padding: 0 24px;
+      padding: 24px 0;
 
       &-1 {
-        @include breakpoint('md') {
-          position: absolute;
-          right: 0;
-          top: 0;
+        @include breakpoint('lg') {
           text-align: left;
           width: 500px;
         }
       }
 
       &-2 {
-        @include breakpoint('md') {
-          position: absolute;
-          left: 0;
-          bottom: 0;
+        @include breakpoint('lg') {
           text-align: right;
           width: 500px;
         }
@@ -85,6 +80,10 @@
   &__heading {
     @include headerFont(4rem, 5.8rem, 1.3px);
     padding-top: 40px;
+
+    @include breakpoint('lg') {
+      padding: 0;
+    }
   }
 
   &__read-more {

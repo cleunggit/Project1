@@ -9,5 +9,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include breakpoint('md') {
+      flex-direction: row;
+    }
+  }
+
+  &-card {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    @include breakpoint('md') {
+      margin: 40px 10px;
+    }
   }
 }
