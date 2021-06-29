@@ -1,7 +1,13 @@
 @use '../utilities/' as *;
 
 .home {
+  background: $almostBlack;
   background-image: url(/assets/home-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include breakpoint('md') {
+    // background-size: contain;
+    background-position: center;
+  }
 }

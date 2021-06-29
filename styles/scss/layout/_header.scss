@@ -6,32 +6,38 @@
   width: 100%;
   padding: 24px 24px 0 24px;
 
+  @include breakpoint('md') {
+    height: 450px;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
+    // position: relative;
+
+    @include breakpoint('md') {
+      max-width: 1110px;
+      margin: 0 auto;
+    }
   }
 
-  &__nav {
-    margin-bottom: 15px;
-  }
-// Hamburger menu
+  // Hamburger menu
   &__hamburger {
     position: relative;
     border: 0;
     background: transparent;
     cursor: pointer;
-
+    
     @include breakpoint('md') {
       display: none;
     }
-
 
     &-bars {
       position: absolute;
       width: 24px;
       height: 2px;
       background-color: $white;
-
+      
       &::before, &::after {
         content: '';
         position: absolute;
@@ -40,14 +46,60 @@
         height: 2px;
         background-color: $white;
       }
-
+      
       &::before {
         top: -7px;
       }
-
+      
       &::after {
         bottom: -7px;
       }
+    }
+  }
+  
+  // Navbar styles
+  &__nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__nav-list {
+    display: none;
+    // position: absolute;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+
+    @include breakpoint('md') {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__nav-item {
+    margin-right: 30px;
+  }
+  
+  &__nav-link {
+    color: $white;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 2px;
+      left:0;
+      right: 0;
+      bottom: -5px;
+      background-color: $sunflowerYellow;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+      opacity: 1;
     }
   }
 
@@ -71,6 +123,18 @@
       padding: 6px 2px;
       margin-top: 8px;
       margin-bottom: 15px;
+    }
+  }
+
+  &__image {
+    display: none;
+
+    @include breakpoint('md') {
+      display: block;
+      width: 520px;
+      position: absolute;
+      top: 135px;
+      right: 0;
     }
   }
 }
