@@ -1,7 +1,9 @@
 @use '../utilities/' as *;
 
 .form {
-  box-shadow: 20px 20px 0 $sunflowerYellow;
+  @include breakpoint('md') {
+    box-shadow: 20px 20px 0 $sunflowerYellow;
+  }
 
   &__wrapper {
     padding: 24px;
@@ -34,8 +36,8 @@
     padding: 20px;
     margin-bottom: 20px;
 
-    @include breakpoint('lg') {
-      width: 378px;
+    @include breakpoint('md') {
+      width: 348px;
     }
 
     &::placeholder {

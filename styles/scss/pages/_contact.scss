@@ -19,7 +19,7 @@ main {
   &__header {
     background-image: url(/assets/contact-header.jpg);
     background-repeat: no-repeat;
-    background-position: -10px;
+    // background-position: -10px;
     background-size: cover;
   }
   
@@ -31,7 +31,7 @@ main {
       flex-direction: row;
       justify-content: space-between;
       position: relative;
-      height: 600px;
+      // height: 100vh;
       background: $pine;
     }
   }
@@ -40,8 +40,8 @@ main {
   &__form {
     background: $almostBlack;
     @include breakpoint('lg') {
-      position: absolute;
-      right: -140px;
+      position: relative;
+      right: -33%;
       top: -130px;
     }
   }
@@ -56,9 +56,10 @@ main {
 
       @include breakpoint('lg') {
         text-align: left;
-        position: absolute;
-        left: 0;
+        position: relative;
+        left: -215%;
         top: 100px;
+        width: 400px;
       }
       
     }
