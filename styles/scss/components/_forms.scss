@@ -1,15 +1,16 @@
 @use '../utilities/' as *;
 
 .form {
-  @include breakpoint('md') {
-    box-shadow: 20px 20px 0 $sunflowerYellow;
-  }
+  // @include breakpoint('md') {
+  //   box-shadow: 20px 20px 0 $sunflowerYellow;
+  // }
 
   &__wrapper {
     padding: 24px;
 
     @include breakpoint('lg') {
       width: 840px;
+      // width: 100%;
       margin: 0 auto;
       padding: 60px 60px 30px 60px;
     }

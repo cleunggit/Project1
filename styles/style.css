@@ -271,6 +271,11 @@ img {
   width: 100%;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   position: relative;
   height: 300px;
@@ -736,12 +741,6 @@ img {
   }
 }
 
-@media (min-width: 769px) {
-  .form {
-    -webkit-box-shadow: 20px 20px 0 #FFD300;
-            box-shadow: 20px 20px 0 #FFD300;
-  }
-}
 .form__wrapper {
   padding: 24px;
 }
@@ -883,6 +882,8 @@ main {
     position: relative;
     right: -33%;
     top: -130px;
+    -webkit-box-shadow: 20px 20px 0 #FFD300;
+            box-shadow: 20px 20px 0 #FFD300;
   }
 }
 .contact__social {
@@ -953,6 +954,8 @@ main {
     top: 0;
     right: 0;
     padding-right: 0;
+    padding-top: -40px;
+    margin-left: 20%;
   }
 }
 .blog-post__heading {
@@ -968,20 +971,22 @@ main {
 @media (min-width: 1025px) {
   .blog-post__heading {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1025px) {
   .blog-post-image {
     position: relative;
-    top: -20px;
+    top: -130px;
     right: 0;
-    -webkit-box-shadow: -5px 5px 0 #FFD300;
-            box-shadow: -5px 5px 0 #FFD300;
+    -webkit-box-shadow: -29px 35px 0 #FFD300;
+            box-shadow: -29px 35px 0 #FFD300;
   }
 }
 @media (min-width: 1025px) {
   .blog-post__text {
     padding: 30px 80px;
+    margin-top: -90px;
   }
 }
 .blog-post__date {
@@ -1001,6 +1006,7 @@ main {
 @media (min-width: 1025px) {
   .comments__wrapper {
     padding: 30px 130px;
+    margin-left: 20%;
   }
 }
 .comments__heading {
@@ -1040,6 +1046,12 @@ main {
   margin-left: 20px;
 }
 
+@media (min-width: 1025px) {
+  .comment-form__wrapper {
+    margin-left: 10px;
+  }
+}
+
 .aside {
   background: #161B0E;
   text-align: center;
@@ -1058,7 +1070,20 @@ main {
 }
 @media (min-width: 1025px) {
   .aside__wrapper {
+    max-width: 625px;
     padding: 10px 20px;
+  }
+}
+@media (min-width: 1025px) {
+  .aside__image {
+    position: relative;
+    top: -20px;
+    left: -80px;
+  }
+}
+@media (min-width: 1025px) {
+  .aside__text {
+    margin-top: -40px;
   }
 }
 .aside__heading {
@@ -1070,10 +1095,18 @@ main {
   color: #FFD300;
   margin-top: 20px;
 }
+@media (min-width: 1025px) {
+  .aside__heading {
+    margin-bottom: 0;
+  }
+}
 .aside__related-posts-list {
   list-style-position: outside;
-  text-align: left;
+  text-align: center;
 }
-.aside__related-posts-list-item {
-  padding-left: 20px;
+@media (min-width: 1025px) {
+  .aside__related-posts-list {
+    text-align: left;
+    margin-left: 20px;
+  }
 }
