@@ -22,8 +22,8 @@ Juno College Web Development Bootcamp - Project 1
 
 ### Links
 
-- Solution URL: [Code](https://github.com/cleunggit/project1)
-- Live Site URL: [Preview](https://cleunggit.github.io/project1)
+- Solution URL: [Code](https://github.com/cleunggit/Project1)
+- Live Site URL: [Preview](https://cleunggit.github.io/Project1)
 
 ## My process
 
