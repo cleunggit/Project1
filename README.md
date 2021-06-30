@@ -32,12 +32,18 @@ Juno College Web Development Bootcamp - Project 1
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Grid
 - SCSS
 
 ### What I learned
 
+- How to set up project structure with SCSS
+- Use BEM naming convention
+- Displaying and positioning a variety of elements
+- Form accessiblity
 
 ## Author
 
-- Frontend Mentor - [@cleunggit](https://www.frontendmentor.io/profile/cleunggit)
 - Twitter - [@CodeLikeChris](https://www.twitter.com/CodeLikeChris)
+- LinkedIn - [Christopher Leung](https://www.linkedin.com/in/christopher-leung-55ab8840/)
+- Medium  - [@cleungdev](https://cleungdev.medium.com/)
