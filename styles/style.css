@@ -381,6 +381,17 @@ ul {
 .header__nav-link:hover::before {
   opacity: 1;
 }
+.header .active::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  background-color: #FFD300;
+  opacity: 1;
+}
 .header__text-wrapper {
   width: 240px;
 }

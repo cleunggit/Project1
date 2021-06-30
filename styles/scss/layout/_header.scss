@@ -103,6 +103,20 @@
     }
   }
 
+  .active {
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 2px;
+      left:0;
+      right: 0;
+      bottom: -5px;
+      background-color: $sunflowerYellow;
+      opacity: 1;
+    }
+  }
+  
   // Header text
   &__text-wrapper {
     width: 240px;
