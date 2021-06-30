@@ -146,6 +146,10 @@
     display: none;
 
     @include breakpoint('md') {
+      display: none;
+    }
+
+    @include breakpoint('lg') {
       display: block;
       width: 520px;
       position: absolute;

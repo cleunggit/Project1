@@ -418,6 +418,11 @@ ul {
 }
 @media (min-width: 769px) {
   .header__image {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .header__image {
     display: block;
     width: 520px;
     position: absolute;
@@ -842,7 +847,7 @@ ul {
 
 .home {
   background: #161B0E;
-  background-image: url(/assets/home-header.jpg);
+  background-image: url(../assets/home-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
