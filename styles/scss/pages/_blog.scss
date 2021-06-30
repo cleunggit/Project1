@@ -35,7 +35,7 @@
       right: 0;
       padding-right: 0;
       padding-top: -40px;
-      margin-left: 20%;
+      margin-left: 10%;
     }
   }
 
@@ -86,7 +86,7 @@
 
     @include breakpoint('lg') {
       padding: 30px 130px;
-      margin-left: 20%;
+      margin-left: 10%;
     }
   }
 
@@ -127,7 +127,7 @@
 
 .comment-form__wrapper {
   @include breakpoint('lg') {
-    margin-left: 10px;
+    margin-left: 15%;;
   }
 }
 
@@ -139,15 +139,16 @@
     height: 100%;
     text-align: left;
     position: relative;
-    left: 0;
-    margin: 60px;
+    left: 22px;
+    top: 120px;
+    // margin: 60px;
   }
   
   &__wrapper {
     padding: 20px 0 50px 0;
     
     @include breakpoint('lg') {
-      max-width: 625px;
+      min-width: 340px;
       padding: 10px 20px;
     }
   }
@@ -156,7 +157,7 @@
     @include breakpoint('lg') {
       position: relative;
       top: -20px;
-      left: -80px;
+      left: -20px;
     }
   }
 
@@ -176,13 +177,21 @@
     }
   }
 
-  &__related-posts-list {
-    list-style-position: outside;
-    text-align: center;
-
+  &__recent-posts {
+    
     @include breakpoint('lg') {
-      text-align: left;
-      margin-left: 20px;
+      margin-top: 70px;
+      margin-bottom: 30px;
+    }
+
+    &-list {
+      list-style-position: outside;
+      text-align: center;
+  
+      @include breakpoint('lg') {
+        text-align: left;
+        margin-left: 20px;
+      }
     }
   }
 }

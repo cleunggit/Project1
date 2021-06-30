@@ -955,7 +955,7 @@ main {
     right: 0;
     padding-right: 0;
     padding-top: -40px;
-    margin-left: 20%;
+    margin-left: 10%;
   }
 }
 .blog-post__heading {
@@ -1006,7 +1006,7 @@ main {
 @media (min-width: 1025px) {
   .comments__wrapper {
     padding: 30px 130px;
-    margin-left: 20%;
+    margin-left: 10%;
   }
 }
 .comments__heading {
@@ -1048,7 +1048,7 @@ main {
 
 @media (min-width: 1025px) {
   .comment-form__wrapper {
-    margin-left: 10px;
+    margin-left: 15%;
   }
 }
 
@@ -1061,8 +1061,8 @@ main {
     height: 100%;
     text-align: left;
     position: relative;
-    left: 0;
-    margin: 60px;
+    left: 22px;
+    top: 120px;
   }
 }
 .aside__wrapper {
@@ -1070,7 +1070,7 @@ main {
 }
 @media (min-width: 1025px) {
   .aside__wrapper {
-    max-width: 625px;
+    min-width: 340px;
     padding: 10px 20px;
   }
 }
@@ -1078,7 +1078,7 @@ main {
   .aside__image {
     position: relative;
     top: -20px;
-    left: -80px;
+    left: -20px;
   }
 }
 @media (min-width: 1025px) {
@@ -1100,12 +1100,18 @@ main {
     margin-bottom: 0;
   }
 }
-.aside__related-posts-list {
+@media (min-width: 1025px) {
+  .aside__recent-posts {
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+}
+.aside__recent-posts-list {
   list-style-position: outside;
   text-align: center;
 }
 @media (min-width: 1025px) {
-  .aside__related-posts-list {
+  .aside__recent-posts-list {
     text-align: left;
     margin-left: 20px;
   }
