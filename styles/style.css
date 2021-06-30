@@ -863,7 +863,7 @@ main {
 }
 
 .contact__header {
-  background-image: url(/assets/contact-header.jpg);
+  background-image: url(../../../assets/contact-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -940,7 +940,7 @@ main {
 }
 
 .blog {
-  background-image: url(/assets/blog-header.jpg);
+  background-image: url(../../../assets/blog-header.jpg);
   background-repeat: no-repeat;
   background-position: -100px;
   background-size: cover;
