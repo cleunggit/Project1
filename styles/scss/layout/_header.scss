@@ -3,7 +3,6 @@
 .header {
   position: relative;
   height: 300px;
-  // width: 100%;
   padding: 24px 24px 0 24px;
 
   @include breakpoint('md') {
@@ -65,7 +64,6 @@
 
   &__nav-list {
     display: none;
-    // position: absolute;
     margin-top: 20px;
     padding: 0;
     list-style: none;
@@ -119,7 +117,7 @@
   
   // Header text
   &__text-wrapper {
-    width: 240px;
+    // width: 240px;
   }
   
   &__text {

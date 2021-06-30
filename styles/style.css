@@ -392,9 +392,6 @@ ul {
   background-color: #FFD300;
   opacity: 1;
 }
-.header__text-wrapper {
-  width: 240px;
-}
 .header__text {
   font-size: 4.9rem;
   font-weight: 600;
@@ -853,6 +850,9 @@ ul {
   .home {
     background-position: center;
   }
+}
+.home__header {
+  width: 240px;
 }
 
 .header__text-wrapper {
