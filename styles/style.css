@@ -276,6 +276,11 @@ ul {
   padding: 0;
 }
 
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 .header {
   position: relative;
   height: 300px;
@@ -349,6 +354,18 @@ ul {
   padding: 10px;
   text-align: center;
   list-style: none;
+}
+.header .overlay {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#161B0E), to(transparent));
+  background-image: linear-gradient(#161B0E, transparent);
+}
+.header .hidden {
+  visibility: hidden;
 }
 .header__nav {
   display: -webkit-box;
