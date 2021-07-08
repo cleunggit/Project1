@@ -17,6 +17,7 @@
   <div class="wrapper">
     <!-- Header -->
     <header class="header blog">
+      <div class="overlay hidden"></div>
       <div class="header__container">
         <!-- Navbar -->
         <nav class="header__nav">
@@ -26,6 +27,15 @@
               <span class="header__hamburger-bars"></span>
             </span>
           </button>
+
+          <!-- mobile menu -->
+          <div class="header__menu hidden">
+            <li class="header__menu-item"><a href="index.html">Home</a></li>
+            <li class="header__menu-item"><a href="index.html#about">About</a></li>
+            <li class="header__menu-item"><a href="blog.html">Blog</a></li>
+            <li class="header__menu-item"><a href="contact.html">Contact</a></li>
+          </div>
+
           <!-- Nav links -->
           <ul class="header__nav-list">
             <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
@@ -146,13 +156,15 @@
   </div>
   </div>
 
-
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__wrapper">
       <p>Copyright © 2021 Juno College</p>
     </div>
   </footer>
+
+  
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
