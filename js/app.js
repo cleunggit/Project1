@@ -9,6 +9,8 @@ menu.init = () => {
   menu.btn = document.querySelector('.header__hamburger')
   menu.menuItems = document.querySelectorAll('.header__menu')
   menu.header = document.querySelector('.header')
+
+  menu.toggleMenu()
 }
 
 // create a function to open the menu
@@ -20,19 +22,19 @@ menu.openMenu = () => {
 menu.closeMenu = () => {
   // remove the open class
   if(menu.header.classList.contains('open')) {
-    menu.header.remove('open')
+    menu.header.classList.remove('open')
   }
 }
 
 // create a function to toggle the menu
 // if the menu
-const toggleMenu = () => {
+menu.toggleMenu = () => {
   menu.btn.addEventListener('click', () => {
 
     if (menu.header.classList.contains('open')) {
       menu.closeMenu()
     } else {
-      openMenu()
+      menu.openMenu()
     }
 
     // close menu when a link is clicked

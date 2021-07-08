@@ -53,6 +53,27 @@
         bottom: -7px;
       }
     }
+
+  }
+
+  &__menu {
+    position: absolute;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 280px;
+    padding: 26px;
+    background: $almostBlack;
+    
+    a {
+      color: white;
+    }
+
+    &-item {
+      padding: 10px;
+      text-align: center;
+      list-style: none;
+    }
   }
   
   // Navbar styles
@@ -116,9 +137,6 @@
   }
   
   // Header text
-  &__text-wrapper {
-    // width: 240px;
-  }
   
   &__text {
     font-size: 4.9rem;

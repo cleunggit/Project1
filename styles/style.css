@@ -332,6 +332,24 @@ ul {
 .header__hamburger-bars::after {
   bottom: -7px;
 }
+.header__menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 280px;
+  padding: 26px;
+  background: #161B0E;
+}
+.header__menu a {
+  color: white;
+}
+.header__menu-item {
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+}
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
