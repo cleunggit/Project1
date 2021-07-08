@@ -46,11 +46,9 @@ menu.toggleMenu = () => {
   // if header contains open class close the menu
     if (menu.header.classList.contains('open')) {
       menu.closeMenu()
-      console.log('close');
   // otherwise, open the menu
     } else {
       menu.openMenu()
-      console.log('open');
     }
 
     // close menu when a link is clicked
